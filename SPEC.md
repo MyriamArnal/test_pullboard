@@ -12,5 +12,12 @@ Write each requirement as one row under its section, in this format. The fence k
 ```
 
 ## G · Goals: what the client asked for
+- G1 [approved, must] The product is a single-page web notes app. | gate: browser smoke test renders the notes interface
+- G2 [approved, must] People can create notes with a title and body. | gate: browser test creates and displays a titled note
+- G3 [approved, must] People can open and edit existing notes. | gate: browser test edits a note and shows the changed content
+- G4 [approved, must] People can delete a note after confirming deletion. | gate: browser test confirms deletion removes only the chosen note
+- G5 [approved, must] Notes persist in the same browser after a page reload. | gate: browser test reloads and finds the saved note
+- G6 [approved, must] The first visit shows a clear empty state and create action. | gate: browser test finds empty-state copy and create control
 
 ## K · Constraints
+- K1 [approved, must] The app works without an account or network service. | gate: browser test completes note CRUD with network disabled
