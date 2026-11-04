@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div><p class="eyebrow">Personal space</p><h1>Notes</h1></div>
+        <button id="new-note" class="primary">New note</button>
+      </header>
+      <section id="empty-state" class="empty-state" aria-live="polite">
+        <div class="empty-icon">✦</div>
+        <h2>Your ideas, in one place.</h2>
+        <p>Create your first note to get started.</p>
+        <button id="empty-create" class="primary">Create a note</button>
+      </section>
+      <section id="notes-layout" class="notes-layout" hidden>
+        <aside><div class="list-heading"><h2>All notes</h2><span id="note-count"></span></div><div id="note-list" class="note-list"></div></aside>
+        <article class="editor" aria-label="Note editor">
+          <label for="note-title">Title</label><input id="note-title" type="text" placeholder="Untitled note" autocomplete="off" />
+          <label for="note-body">Body</label><textarea id="note-body" placeholder="Start writing..."></textarea>
+          <div class="editor-footer"><span id="save-status">Saved locally</span><button id="delete-note" class="danger">Delete note</button></div>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
