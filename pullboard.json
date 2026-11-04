@@ -1,5 +1,7 @@
 {
-  "relay": { "board": "f1ac4f9ae2e1f16e98b488e8de34e6bc" },
+  "relay": {
+    "board": "f1ac4f9ae2e1f16e98b488e8de34e6bc"
+  },
   "gate": "",
   "spec": "SPEC.md",
   "practice": "DOCTRINE.md",
@@ -16,6 +18,11 @@
     "review": {
       "owns": [],
       "starts": "any time: verifiers check submitted work and own no folders"
+    },
+    "app": {
+      "owns": [
+        "./"
+      ]
     }
   },
   "shared": [],
